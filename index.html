@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nayee Umang Organization</title>
+    <meta
+      name="description"
+      content="Nayee Umang Organization is a welfare foundation focused on education, health, and support for people in need."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              nuPrimary: "#2B6CB0",
+              nuSecondary: "#38B2AC",
+              nuAccent: "#F6AD55",
+              nuDark: "#1A202C",
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+            boxShadow: {
+              glow: "0 20px 45px rgba(56, 178, 172, 0.25)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans text-slate-700 bg-slate-50 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200">
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-slate-700 dark:bg-slate-900/90"
+    >
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <a href="#hero" class="flex items-center gap-3">
+          <img
+            src="assets/Logo.png"
+            alt="Nayee Umang Organization logo"
+            class="h-14 w-14 rounded-2xl border-2 border-nuPrimary/40 bg-gradient-to-br from-white via-white to-nuPrimary/10 p-1.5 shadow-lg shadow-nuPrimary/25 transition-transform duration-200 hover:scale-105 dark:border-nuSecondary/40 dark:from-slate-900 dark:via-slate-900 dark:to-nuSecondary/10 dark:shadow-nuSecondary/30 object-contain"
+          />
+          <div class="leading-tight">
+            <p class="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              Nayee Umang
+            </p>
+            <p class="text-lg font-semibold text-nuDark dark:text-slate-100">Welfare Foundation</p>
+          </div>
+        </a>
+        <button
+          id="mobile-menu-toggle"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary md:hidden dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <nav
+          id="main-nav"
+          class="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex dark:text-slate-300"
+        >
+          <a href="#about" class="transition hover:text-nuPrimary dark:hover:text-white">About</a>
+          <a href="#pillars" class="transition hover:text-nuPrimary dark:hover:text-white">Focus Areas</a>
+          <a href="#programs" class="transition hover:text-nuPrimary dark:hover:text-white">Programs</a>
+          <a href="#impact" class="transition hover:text-nuPrimary dark:hover:text-white">Impact</a>
+          <a href="#journey" class="transition hover:text-nuPrimary dark:hover:text-white">Journey</a>
+          <a href="#stories" class="transition hover:text-nuPrimary dark:hover:text-white">Stories</a>
+          <a href="#support" class="transition hover:text-nuPrimary dark:hover:text-white">Support</a>
+          <a href="#contact" class="transition hover:text-nuPrimary dark:hover:text-white">Contact</a>
+        </nav>
+        <div class="hidden items-center gap-3 md:flex">
+          <button
+            id="theme-toggle"
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-nuPrimary hover:text-nuPrimary focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-nuSecondary dark:hover:text-nuSecondary"
+            aria-label="Toggle color theme"
+          >
+            <svg
+              class="theme-icon-sun h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 3v1.5M12 19.5V21M21 12h-1.5M4.5 12H3M18.364 5.636l-1.06 1.06M6.697 17.303l-1.06 1.06M5.636 5.636l1.06 1.06M17.303 17.303l1.06 1.06" />
+            </svg>
+            <svg
+              class="theme-icon-moon hidden h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+              />
+            </svg>
+          </button>
+          <a
+            href="#support"
+            class="rounded-full bg-nuPrimary px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-nuPrimary/25 transition hover:bg-nuPrimary/90 dark:bg-nuSecondary dark:text-slate-950 dark:shadow-nuSecondary/30 dark:hover:bg-nuSecondary/90"
+          >
+            Donate Now
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-slate-200 bg-white px-4 pb-6 pt-2 md:hidden dark:border-slate-700 dark:bg-slate-900"
+      >
+        <nav class="flex flex-col gap-3 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <a href="#about" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >About</a
+          >
+          <a href="#pillars" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Focus Areas</a
+          >
+          <a href="#programs" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Programs</a
+          >
+          <a href="#impact" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Impact</a
+          >
+          <a href="#journey" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Journey</a
+          >
+          <a href="#stories" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Stories</a
+          >
+          <a href="#support" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Support</a
+          >
+          <a href="#contact" class="mobile-nav-link rounded-lg px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >Contact</a
+          >
+          <button
+            id="theme-toggle-mobile"
+            type="button"
+            class="mt-2 inline-flex items-center justify-between rounded-lg border border-slate-200 px-4 py-2 text-left text-sm text-slate-600 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+          >
+            <span>Toggle Theme</span>
+            <span class="flex items-center gap-2 text-xs uppercase tracking-widest text-slate-400 dark:text-slate-500">
+              <svg
+                class="theme-icon-sun h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 3v1.5M12 19.5V21M21 12h-1.5M4.5 12H3M18.364 5.636l-1.06 1.06M6.697 17.303l-1.06 1.06M5.636 5.636l1.06 1.06M17.303 17.303l1.06 1.06" />
+              </svg>
+              <svg
+                class="theme-icon-moon hidden h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+              </svg>
+            </span>
+          </button>
+          <a
+            href="#support"
+            class="mt-3 inline-flex items-center justify-center rounded-full bg-nuPrimary px-5 py-2 text-sm font-semibold text-white shadow transition hover:bg-nuPrimary/90 dark:bg-nuSecondary dark:text-slate-950 dark:hover:bg-nuSecondary/90"
+          >
+            Donate Now
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mt-20">
+      <section
+        id="hero"
+        class="relative overflow-hidden bg-gradient-to-b from-nuPrimary/10 via-white to-white pb-24 pt-24 dark:from-slate-900/40 dark:via-slate-950 dark:to-slate-950"
+      >
+        <div class="absolute inset-0 -z-10">
+          <div
+            class="absolute -left-10 top-10 h-32 w-32 rounded-full bg-nuSecondary/15 blur-3xl dark:bg-nuSecondary/30"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-nuAccent/15 blur-3xl dark:bg-nuAccent/25"
+          ></div>
+        </div>
+        <div class="mx-auto flex max-w-6xl flex-col gap-12 px-4 md:flex-row md:items-center">
+          <div class="flex-1">
+            <span
+              class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-xs font-semibold uppercase tracking-wider text-nuPrimary shadow dark:bg-slate-900/80 dark:text-nuSecondary"
+            >
+              Since 2010 • Founded by Noreen Aziel
+            </span>
+            <h1 class="mt-6 text-4xl font-bold text-nuDark md:text-5xl lg:text-6xl dark:text-white">
+              Empowering communities through education, health, and care.
+            </h1>
+            <p class="mt-5 max-w-xl text-lg text-slate-600 dark:text-slate-300">
+              Nayee Umang Organization is dedicated to uplifting underprivileged families by
+              providing access to quality education, primary healthcare, and support for
+              those in need.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#support"
+                class="inline-flex items-center justify-center rounded-full bg-nuPrimary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-nuPrimary/90"
+              >
+                Support Our Work
+              </a>
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-600 transition hover:border-nuPrimary hover:text-nuPrimary dark:border-slate-700 dark:text-slate-200 dark:hover:text-white"
+              >
+                Learn More
+              </a>
+            </div>
+            <dl class="mt-10 grid grid-cols-2 gap-6 text-sm text-slate-600 sm:grid-cols-4 dark:text-slate-300">
+              <div>
+                <dt class="font-semibold text-nuDark dark:text-white">15k+</dt>
+                <dd>Students reached with learning programs</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-nuDark dark:text-white">300+</dt>
+                <dd>Community health camps conducted</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-nuDark dark:text-white">1200+</dt>
+                <dd>Families supported with essential aid</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-nuDark dark:text-white">45</dt>
+                <dd>Partner organizations nationwide</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="flex-1">
+            <div
+              class="relative overflow-hidden rounded-3xl bg-white p-6 shadow-xl shadow-nuPrimary/10 dark:bg-slate-900/70 dark:shadow-black/30"
+            >
+              <div
+                class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-nuPrimary/10 blur-3xl dark:bg-nuPrimary/30"
+              ></div>
+              <div class="space-y-5">
+                <div
+                  class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-300"
+                >
+                  “Nayee Umang has transformed our community by making education accessible
+                  to every child.”
+                  <p class="mt-2 font-semibold text-nuDark dark:text-white">— Amina, Community Teacher</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div class="rounded-2xl bg-nuPrimary/10 p-4 text-nuPrimary dark:bg-nuPrimary/20 dark:text-nuPrimary/90">
+                    <p class="font-semibold">Scholarships</p>
+                    <p class="mt-2 text-xs text-nuPrimary/90">Investing in future leaders</p>
+                  </div>
+                  <div class="rounded-2xl bg-nuSecondary/10 p-4 text-nuSecondary dark:bg-nuSecondary/20 dark:text-nuSecondary/90">
+                    <p class="font-semibold">Health Camps</p>
+                    <p class="mt-2 text-xs text-nuSecondary/90">
+                      Mobile outreach clinics
+                    </p>
+                  </div>
+                  <div class="rounded-2xl bg-nuAccent/10 p-4 text-nuAccent dark:bg-nuAccent/20 dark:text-nuAccent/90">
+                    <p class="font-semibold">Nutrition</p>
+                    <p class="mt-2 text-xs text-nuAccent/90">
+                      Support for mothers & children
+                    </p>
+                  </div>
+                  <div class="rounded-2xl bg-slate-900/90 p-4 text-white dark:bg-slate-800">
+                    <p class="font-semibold">Skill Labs</p>
+                    <p class="mt-2 text-xs text-white/80">Vocational training hubs</p>
+                  </div>
+                </div>
+                <div class="rounded-2xl border border-dashed border-nuSecondary p-4 dark:border-nuSecondary/40">
+                  <p class="text-xs uppercase tracking-wider text-nuSecondary dark:text-nuSecondary/80">
+                    Focus 2025
+                  </p>
+                  <p class="mt-1 text-base font-semibold text-nuDark dark:text-white">
+                    Expand outreach to 25 new communities
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-white py-20 dark:bg-slate-900">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 md:grid-cols-[2fr,1fr] md:items-center">
+            <div>
+              <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">About Nayee Umang</h2>
+              <p class="mt-6 text-lg text-slate-600 dark:text-slate-300">
+                Founded in 2010 by visionary philanthropist Noreen Aziel, Nayee Umang
+                Organization believes that every individual deserves equal access to
+                education, healthcare, and opportunities for growth.
+              </p>
+              <p class="mt-4 text-slate-600 dark:text-slate-300">
+                Our foundation works closely with local communities and partners to create
+                sustainable initiatives that empower people to lead healthier, more
+                educated, and dignified lives.
+              </p>
+              <p class="mt-4 text-slate-600 dark:text-slate-300">
+                We proudly stand with Pakistan’s Christian community—supporting schools, clinics, and
+                neighborhood outreach so that every family, regardless of faith, can access hope and
+                opportunity.
+              </p>
+              <div class="mt-8 grid gap-6 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 p-6 dark:border-slate-700 dark:bg-slate-800/60">
+                  <p class="text-sm uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80">Mission</p>
+                  <p class="mt-2 text-slate-600 dark:text-slate-300">
+                    To bridge social gaps by delivering holistic support across education,
+                    health, and social welfare.
+                  </p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 dark:border-slate-700 dark:bg-slate-800/60">
+                  <p class="text-sm uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80">Vision</p>
+                  <p class="mt-2 text-slate-600 dark:text-slate-300">
+                    Transform communities through inclusive growth and lasting impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-6 rounded-3xl bg-gradient-to-br from-nuPrimary/10 via-white to-nuSecondary/10 p-8 dark:from-slate-800 dark:via-slate-900 dark:to-slate-900">
+              <article class="rounded-2xl border border-nuPrimary/20 bg-white/70 p-6 shadow-sm dark:border-nuPrimary/40 dark:bg-slate-900/80">
+                <div class="flex items-center gap-4">
+                  <div class="h-20 w-20 overflow-hidden rounded-full border-4 border-white shadow-lg shadow-nuPrimary/30 dark:border-slate-800">
+                    <img
+                      src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=320&q=80"
+                      alt="Portrait of Noreen Aziel, founder of Nayee Umang Organization"
+                      class="h-full w-full rounded-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80">
+                      Founder
+                    </p>
+                    <p class="text-lg font-semibold text-nuDark dark:text-white">Noreen Aziel</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-300/80">Visionary behind Nayee Umang since 2010</p>
+                  </div>
+                </div>
+                <p class="mt-6 text-base text-slate-600 dark:text-slate-300">
+                  “When we empower someone to learn, heal, and thrive, we uplift generations.
+                  Nayee Umang is my promise to every person seeking hope.”
+                </p>
+                <button
+                  type="button"
+                  class="toggle-message mt-6 inline-flex items-center gap-2 rounded-full border border-nuPrimary/40 bg-white/60 px-5 py-2 text-sm font-semibold text-nuPrimary transition hover:bg-nuPrimary/10 dark:bg-slate-900/60 dark:text-nuPrimary/80"
+                  aria-expanded="false"
+                  data-target="founder-message"
+                >
+                  <span class="toggle-message-label">Hear Noreen's Message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="toggle-message-icon h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4" />
+                  </svg>
+                </button>
+                <div
+                  id="founder-message"
+                  class="mt-4 hidden rounded-2xl border border-nuPrimary/20 bg-white p-5 text-sm text-slate-600 shadow-sm dark:border-nuPrimary/40 dark:bg-slate-900/80 dark:text-slate-300"
+                >
+                  <p>
+                    “Over the last 15 years, we have stood beside families across Pakistan—from coastal towns
+                    to mountain villages and the vibrant Christian communities who trust Nayee Umang as a partner.
+                    Together we cultivate dignity through schooling, healthcare, and livelihoods.”
+                  </p>
+                </div>
+              </article>
+              <article class="rounded-2xl border border-nuSecondary/30 bg-white/70 p-6 shadow-sm dark:border-nuSecondary/40 dark:bg-slate-900/80">
+                <div class="flex items-center gap-4">
+                  <div class="h-20 w-20 overflow-hidden rounded-full border-4 border-white shadow-lg shadow-nuSecondary/30 dark:border-slate-800">
+                    <img
+                      src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=320&q=80"
+                      alt="Portrait of Daniel Joseph, CEO of Nayee Umang Organization"
+                      class="h-full w-full rounded-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-widest text-nuSecondary dark:text-nuSecondary/80">
+                      Chief Executive Officer
+                    </p>
+                    <p class="text-lg font-semibold text-nuDark dark:text-white">Daniel Joseph</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-300/80">Driving impactful delivery nationwide</p>
+                  </div>
+                </div>
+                <p class="mt-6 text-base text-slate-600 dark:text-slate-300">
+                  “Our teams serve with empathy and precision—whether we are setting up digital classrooms,
+                  arranging medical camps, or supporting Christian families seeking inclusive opportunities.”
+                </p>
+                <button
+                  type="button"
+                  class="toggle-message mt-6 inline-flex items-center gap-2 rounded-full border border-nuSecondary/40 bg-white/60 px-5 py-2 text-sm font-semibold text-nuSecondary transition hover:bg-nuSecondary/10 dark:bg-slate-900/60 dark:text-nuSecondary/80"
+                  aria-expanded="false"
+                  data-target="ceo-message"
+                >
+                  <span class="toggle-message-label">Hear the CEO's Vision</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="toggle-message-icon h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4" />
+                  </svg>
+                </button>
+                <div
+                  id="ceo-message"
+                  class="mt-4 hidden rounded-2xl border border-nuSecondary/20 bg-white p-5 text-sm text-slate-600 shadow-sm dark:border-nuSecondary/40 dark:bg-slate-900/80 dark:text-slate-300"
+                >
+                  <p>
+                    “We believe transparent management and community ownership fuel trust. By collaborating with
+                    faith leaders, local educators, and healthcare partners, we ensure Nayee Umang delivers lasting change
+                    across Pakistan’s diverse communities.”
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pillars" class="bg-slate-100 py-20 dark:bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">Our Core Focus</h2>
+              <p class="mt-3 text-slate-600 dark:text-slate-300">
+                Three pillars guide every initiative and program we deliver on the ground.
+              </p>
+            </div>
+            <a
+              href="#programs"
+              class="inline-flex items-center gap-2 text-sm font-semibold text-nuPrimary hover:text-nuPrimary/80 dark:text-nuSecondary dark:hover:text-nuSecondary/80"
+            >
+              Explore Programs
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="mt-12 grid gap-10 lg:grid-cols-[1.3fr,1fr]">
+            <div>
+              <div class="flex flex-wrap items-center gap-3" role="tablist" aria-label="Focus area tabs">
+                <button
+                  type="button"
+                  class="pillar-tab focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary/60 rounded-full border border-nuPrimary/40 bg-nuPrimary px-5 py-2 text-sm font-semibold text-white shadow"
+                  data-target="pillar-education"
+                  data-active-classes="bg-nuPrimary text-white border-nuPrimary/40 shadow"
+                  data-inactive-classes="bg-white text-nuPrimary border-slate-200"
+                  aria-selected="true"
+                  aria-controls="pillar-education"
+                  role="tab"
+                  data-color="nuPrimary"
+                >
+                  Education
+                </button>
+                <button
+                  type="button"
+                  class="pillar-tab focus:outline-none focus-visible:ring-2 focus-visible:ring-nuSecondary/60 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-600 transition"
+                  data-target="pillar-health"
+                  data-active-classes="bg-nuSecondary text-white border-nuSecondary/40 shadow"
+                  data-inactive-classes="bg-white text-nuSecondary border-slate-200"
+                  aria-selected="false"
+                  aria-controls="pillar-health"
+                  role="tab"
+                  data-color="nuSecondary"
+                >
+                  Health & Wellness
+                </button>
+                <button
+                  type="button"
+                  class="pillar-tab focus:outline-none focus-visible:ring-2 focus-visible:ring-nuAccent/60 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-600 transition"
+                  data-target="pillar-community"
+                  data-active-classes="bg-nuAccent text-white border-nuAccent/40 shadow"
+                  data-inactive-classes="bg-white text-nuAccent border-slate-200"
+                  aria-selected="false"
+                  aria-controls="pillar-community"
+                  role="tab"
+                  data-color="nuAccent"
+                >
+                  Community Care
+                </button>
+              </div>
+              <div class="hidden">
+                <span class="bg-nuPrimary bg-nuSecondary bg-nuAccent bg-white text-nuPrimary text-nuSecondary text-nuAccent text-white text-slate-600 border-nuPrimary/40 border-nuSecondary/40 border-nuAccent/40 border-slate-200 shadow opacity-40 pointer-events-none"></span>
+              </div>
+              <div class="mt-8 space-y-6">
+                <article
+                  id="pillar-education"
+                  class="pillar-panel rounded-3xl border border-nuPrimary/20 bg-white p-8 shadow-sm dark:border-nuPrimary/40 dark:bg-slate-900/70"
+                  role="tabpanel"
+                  tabindex="0"
+                >
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-nuPrimary/10 text-nuPrimary dark:bg-nuPrimary/20 dark:text-nuPrimary/90">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5zm0 0v7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold text-nuDark dark:text-white">Education for Every Child</h3>
+                      <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                        Literacy programs, scholarships, and community schools tailored to children and youth, including inclusive curricula for
+                        Christian learners in underserved districts.
+                      </p>
+                      <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-2xl bg-slate-50 p-4 text-xs text-slate-600 dark:bg-slate-800/70 dark:text-slate-300">
+                          <p class="font-semibold text-nuPrimary dark:text-nuPrimary/80">Mobile Learning Pods</p>
+                          <p class="mt-1">STEM-focused pop-up classrooms with tablets and mentors.</p>
+                        </div>
+                        <div class="rounded-2xl bg-slate-50 p-4 text-xs text-slate-600 dark:bg-slate-800/70 dark:text-slate-300">
+                          <p class="font-semibold text-nuPrimary dark:text-nuPrimary/80">Scholarship Trust</p>
+                          <p class="mt-1">Merit and need-based support for secondary education.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article
+                  id="pillar-health"
+                  class="pillar-panel hidden rounded-3xl border border-nuSecondary/20 bg-white p-8 shadow-sm dark:border-nuSecondary/40 dark:bg-slate-900/70"
+                  role="tabpanel"
+                  tabindex="0"
+                >
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-nuSecondary/10 text-nuSecondary dark:bg-nuSecondary/20 dark:text-nuSecondary/90">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 1.567-3 3.5S10.343 15 12 15s3-1.567 3-3.5S13.657 8 12 8z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10a7.486 7.486 0 00-1.151-3.936M5.651 6.064A7.487 7.487 0 004.5 10m0 0a7.5 7.5 0 0015 0" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold text-nuDark dark:text-white">Health & Wellness</h3>
+                      <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                        Preventive healthcare, maternal wellness, and mobile medical outreach co-designed with local hospitals and church networks.
+                      </p>
+                      <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-2xl bg-slate-50 p-4 text-xs text-slate-600 dark:bg-slate-800/70 dark:text-slate-300">
+                          <p class="font-semibold text-nuSecondary dark:text-nuSecondary/80">Community Clinics</p>
+                          <p class="mt-1">Quarterly health camps serving 5,000+ patients annually.</p>
+                        </div>
+                        <div class="rounded-2xl bg-slate-50 p-4 text-xs text-slate-600 dark:bg-slate-800/70 dark:text-slate-300">
+                          <p class="font-semibold text-nuSecondary dark:text-nuSecondary/80">Wellness Circles</p>
+                          <p class="mt-1">Mental health support circles with trained counsellors.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article
+                  id="pillar-community"
+                  class="pillar-panel hidden rounded-3xl border border-nuAccent/30 bg-white p-8 shadow-sm dark:border-nuAccent/40 dark:bg-slate-900/70"
+                  role="tabpanel"
+                  tabindex="0"
+                >
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-nuAccent/10 text-nuAccent dark:bg-nuAccent/20 dark:text-nuAccent/90">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 010-6.364L6.5 1.5l2.182-2.182a4.5 4.5 0 116.364 6.364L6.5 16.5l-2.182-2.182a4.5 4.5 0 010-6.364z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold text-nuDark dark:text-white">Community Care</h3>
+                      <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                        Relief support, livelihood skills, safe spaces, and advocacy for marginalized families, with dedicated outreach to Christian neighborhoods.
+                      </p>
+                      <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-2xl bg-slate-50 p-4 text-xs text-slate-600 dark:bg-slate-800/70 dark:text-slate-300">
+                          <p class="font-semibold text-nuAccent dark:text-nuAccent/90">Resilience Grants</p>
+                          <p class="mt-1">Seed funding for micro-enterprises owned by women.</p>
+                        </div>
+                        <div class="rounded-2xl bg-slate-50 p-4 text-xs text-slate-600 dark:bg-slate-800/70 dark:text-slate-300">
+                          <p class="font-semibold text-nuAccent dark:text-nuAccent/90">Rapid Relief</p>
+                          <p class="mt-1">Emergency aid kits and shelter partnerships within 48 hours.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-3xl border border-dashed border-slate-200 bg-white p-8 dark:border-slate-700 dark:bg-slate-900">
+              <div class="absolute -left-16 top-10 h-32 w-32 rounded-full bg-nuPrimary/10 blur-3xl dark:bg-nuPrimary/25"></div>
+              <div class="absolute bottom-0 right-0 h-36 w-36 rounded-full bg-nuAccent/15 blur-3xl dark:bg-nuAccent/25"></div>
+              <div class="relative space-y-6">
+                <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Service Snapshot
+                </p>
+                <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                  <div class="rounded-2xl border border-white/0 bg-slate-50 p-4 shadow-sm dark:bg-slate-800/70 dark:text-slate-200">
+                    <p class="text-xs uppercase tracking-widest text-nuPrimary">01</p>
+                    <p class="mt-1 font-semibold text-nuDark dark:text-white">Needs Assessment Labs</p>
+                    <p class="mt-1 text-slate-500 dark:text-slate-300">
+                      Real-time dashboards map priority communities across Pakistan.
+                    </p>
+                  </div>
+                  <div class="rounded-2xl border border-white/0 bg-slate-50 p-4 shadow-sm dark:bg-slate-800/70 dark:text-slate-200">
+                    <p class="text-xs uppercase tracking-widest text-nuSecondary">02</p>
+                    <p class="mt-1 font-semibold text-nuDark dark:text-white">Multi-faith Partnerships</p>
+                    <p class="mt-1 text-slate-500 dark:text-slate-300">
+                      Collaboration with mosques, churches, and civic groups to deliver cohesive solutions.
+                    </p>
+                  </div>
+                  <div class="rounded-2xl border border-white/0 bg-slate-50 p-4 shadow-sm dark:bg-slate-800/70 dark:text-slate-200">
+                    <p class="text-xs uppercase tracking-widest text-nuAccent">03</p>
+                    <p class="mt-1 font-semibold text-nuDark dark:text-white">Impact Analytics</p>
+                    <p class="mt-1 text-slate-500 dark:text-slate-300">
+                      Impact dashboards track beneficiary outcomes and donor transparency.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#programs"
+                  class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-600 transition hover:border-nuPrimary hover:text-nuPrimary dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:text-white"
+                >
+                  View Program Portfolio
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7l5 5-5 5M6 12h12" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="bg-white py-20 dark:bg-slate-900">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">Key Programs</h2>
+            <p class="mt-4 text-slate-600 dark:text-slate-300">
+              Our programs are designed to create lasting change and strengthen local
+              communities.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-2">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-700 dark:bg-slate-800/70">
+              <p class="text-sm uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80">Education</p>
+              <h3 class="mt-3 text-xl font-semibold text-nuDark dark:text-white">Learning Access</h3>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                Mobile classrooms, digital learning pods, and scholarships for girls.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                <li>• After-school enrichment</li>
+                <li>• STEM clubs for adolescents</li>
+                <li>• Teacher training workshops</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-700 dark:bg-slate-800/70">
+              <p class="text-sm uppercase tracking-widest text-nuSecondary dark:text-nuSecondary/80">Health</p>
+              <h3 class="mt-3 text-xl font-semibold text-nuDark dark:text-white">Healthy Futures</h3>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                Community clinics, immunization drives, and nutrition coaching.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                <li>• Maternal and child wellness</li>
+                <li>• Preventive screening camps</li>
+                <li>• Mental health support circles</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-700 dark:bg-slate-800/70">
+              <p class="text-sm uppercase tracking-widest text-nuAccent dark:text-nuAccent/90">Community</p>
+              <h3 class="mt-3 text-xl font-semibold text-nuDark dark:text-white">Resilience Hub</h3>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                Emergency aid, livelihood training, and social protection programs.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                <li>• Skills for youth and women</li>
+                <li>• Shelter and relief support</li>
+                <li>• Legal aid and advocacy</li>
+                <li>• Christian community outreach in Pakistan</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-700 dark:bg-slate-800/70">
+              <p class="text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">Partnerships</p>
+              <h3 class="mt-3 text-xl font-semibold text-nuDark dark:text-white">Collaborative Change</h3>
+              <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+                Working with schools, hospitals, and local leaders to amplify impact.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                <li>• Community-led planning</li>
+                <li>• Volunteer mobilization</li>
+                <li>• Corporate social responsibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="bg-slate-900 py-20 text-white">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col gap-12 md:flex-row md:items-center">
+            <div class="flex-1">
+              <h2 class="text-3xl font-bold md:text-4xl">
+                Impact that transforms lives
+              </h2>
+              <p class="mt-4 text-slate-300">
+                We measure success through improved lives, empowered communities, and a
+                legacy of opportunity.
+              </p>
+              <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+                <div class="rounded-2xl bg-white/5 p-6">
+                  <p class="text-3xl font-semibold text-nuAccent counter" data-count="89">
+                    0
+                  </p>
+                  <p class="mt-2 text-xs uppercase tracking-widest text-slate-400">
+                    Learning Centers
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-white/5 p-6">
+                  <p class="text-3xl font-semibold text-nuAccent counter" data-count="240">
+                    0
+                  </p>
+                  <p class="mt-2 text-xs uppercase tracking-widest text-slate-400">
+                    Health Professionals
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-white/5 p-6">
+                  <p class="text-3xl font-semibold text-nuAccent counter" data-count="38">
+                    0
+                  </p>
+                  <p class="mt-2 text-xs uppercase tracking-widest text-slate-400">
+                    Districts Served
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 rounded-3xl bg-white/5 p-8 shadow shadow-black/40">
+              <h3 class="text-xl font-semibold">Sustainable Development Goals</h3>
+              <p class="mt-4 text-sm text-slate-300">
+                Our work aligns with the global goals for quality education (SDG 4), good
+                health and well-being (SDG 3), and reduced inequalities (SDG 10).
+              </p>
+              <div class="mt-6 grid grid-cols-1 gap-4 text-sm text-slate-300 sm:grid-cols-2">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p class="text-xs uppercase tracking-widest text-nuAccent">SDG 4</p>
+                  <p class="mt-1">Quality Education</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p class="text-xs uppercase tracking-widest text-nuAccent">SDG 3</p>
+                  <p class="mt-1">Good Health & Well-being</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p class="text-xs uppercase tracking-widest text-nuAccent">SDG 5</p>
+                  <p class="mt-1">Gender Equality</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p class="text-xs uppercase tracking-widest text-nuAccent">SDG 10</p>
+                  <p class="mt-1">Reduced Inequalities</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="bg-gradient-to-b from-white via-slate-50 to-white py-20 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">Our Journey to Impact</h2>
+              <p class="mt-3 text-slate-600 dark:text-slate-300">
+                A timeline of milestones that shaped Nayee Umang’s growth and deepened our service to communities across Pakistan.
+              </p>
+            </div>
+            <a
+              href="#support"
+              class="inline-flex items-center gap-2 rounded-full border border-nuPrimary/30 bg-white px-5 py-2 text-sm font-semibold text-nuPrimary transition hover:bg-nuPrimary/10 dark:border-slate-700 dark:bg-slate-900 dark:text-nuSecondary dark:hover:bg-slate-800"
+            >
+              Partner With Us
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="relative mt-12">
+            <div class="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-nuPrimary via-nuSecondary to-nuAccent md:left-1/2"></div>
+            <div class="space-y-12">
+              <div class="timeline-item md:flex md:items-center md:gap-10">
+                <div class="relative mb-4 flex items-center gap-4 md:order-2 md:mb-0 md:w-1/2 md:justify-end">
+                  <span class="timeline-bullet grid h-12 w-12 place-content-center rounded-full bg-white text-sm font-semibold text-nuPrimary shadow shadow-nuPrimary/20 dark:bg-slate-900 dark:text-nuPrimary/80">
+                    2010
+                  </span>
+                  <div class="rounded-3xl border border-nuPrimary/20 bg-white p-6 shadow-sm dark:border-nuPrimary/40 dark:bg-slate-900/80">
+                    <h3 class="text-lg font-semibold text-nuDark dark:text-white">Foundation Established</h3>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                      Noreen Aziel launches Nayee Umang with a scholarship fund for girls in Karachi and Lahore’s Christian quarters.
+                    </p>
+                  </div>
+                </div>
+                <div class="md:w-1/2"></div>
+              </div>
+              <div class="timeline-item md:flex md:items-center md:gap-10">
+                <div class="md:w-1/2">
+                  <div class="relative mb-4 flex items-center gap-4 md:mb-0">
+                    <span class="timeline-bullet grid h-12 w-12 place-content-center rounded-full bg-white text-sm font-semibold text-nuSecondary shadow shadow-nuSecondary/20 dark:bg-slate-900 dark:text-nuSecondary/80">
+                      2015
+                    </span>
+                    <div class="rounded-3xl border border-nuSecondary/20 bg-white p-6 shadow-sm dark:border-nuSecondary/40 dark:bg-slate-900/80">
+                      <h3 class="text-lg font-semibold text-nuDark dark:text-white">Community Health Network</h3>
+                      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                        Mobile clinics expand to Sindh and Punjab, offering maternal health and telemedicine to over 40 villages.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2"></div>
+              </div>
+              <div class="timeline-item md:flex md:items-center md:gap-10">
+                <div class="relative mb-4 flex items-center gap-4 md:order-2 md:mb-0 md:w-1/2 md:justify-end">
+                  <span class="timeline-bullet grid h-12 w-12 place-content-center rounded-full bg-white text-sm font-semibold text-nuAccent shadow shadow-nuAccent/20 dark:bg-slate-900 dark:text-nuAccent/80">
+                    2019
+                  </span>
+                  <div class="rounded-3xl border border-nuAccent/20 bg-white p-6 shadow-sm dark:border-nuAccent/40 dark:bg-slate-900/80">
+                    <h3 class="text-lg font-semibold text-nuDark dark:text-white">Digital Skills Labs</h3>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                      Launch of digital literacy labs and livelihood incubators for youth and women entrepreneurs.
+                    </p>
+                  </div>
+                </div>
+                <div class="md:w-1/2"></div>
+              </div>
+              <div class="timeline-item md:flex md:items-center md:gap-10">
+                <div class="md:w-1/2">
+                  <div class="relative mb-4 flex items-center gap-4 md:mb-0">
+                    <span class="timeline-bullet grid h-12 w-12 place-content-center rounded-full bg-white text-sm font-semibold text-slate-700 shadow shadow-slate-300/60 dark:bg-slate-900 dark:text-slate-200">
+                      2024
+                    </span>
+                    <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900/80">
+                      <h3 class="text-lg font-semibold text-nuDark dark:text-white">National Solidarity Coalitions</h3>
+                      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                        Strategic alliances with Christian councils, youth groups, and corporate partners accelerate our goal of serving 25 new communities by 2025.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="bg-white py-20 dark:bg-slate-900">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">Stories of Hope</h2>
+            <p class="mt-4 text-slate-600 dark:text-slate-300">
+              Real voices from individuals and communities who are thriving with support
+              from Nayee Umang.
+            </p>
+          </div>
+          <div class="relative mt-12">
+            <button
+              type="button"
+              class="stories-nav stories-prev absolute left-0 top-1/2 z-10 hidden -translate-y-1/2 rounded-full border border-slate-200 bg-white p-3 text-slate-600 shadow transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary lg:flex dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:focus-visible:ring-nuSecondary"
+              aria-label="Previous story"
+              data-direction="prev"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div
+              class="stories-track flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 pe-6 ps-1 scroll-smooth lg:pe-0 lg:ps-0"
+              role="list"
+            >
+              <article
+                class="story-card min-w-[260px] flex-1 snap-center overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary md:min-w-[320px] dark:border-slate-700 dark:bg-slate-900/70 dark:hover:shadow-slate-900/50"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+                  alt="Farah smiling during a science mentoring session"
+                  class="h-48 w-full object-cover"
+                />
+                <div class="p-6">
+                  <p class="text-sm text-slate-600 dark:text-slate-300">
+                    “The scholarship program helped me stay in school and pursue science. Now I mentor other girls.”
+                  </p>
+                  <p class="mt-4 text-sm font-semibold text-nuDark dark:text-white">Farah, 18</p>
+                  <p class="text-xs uppercase tracking-widest text-slate-400 dark:text-slate-500">STEM Scholar</p>
+                </div>
+              </article>
+              <article
+                class="story-card min-w-[260px] flex-1 snap-center overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary md:min-w-[320px] dark:border-slate-700 dark:bg-slate-900/70 dark:hover:shadow-slate-900/50"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
+                  alt="Dr. Imran attending to patients at a community clinic"
+                  class="h-48 w-full object-cover"
+                />
+                <div class="p-6">
+                  <p class="text-sm text-slate-600 dark:text-slate-300">
+                    “Our village clinic has reduced preventable illnesses. Mothers now receive the care they deserve.”
+                  </p>
+                  <p class="mt-4 text-sm font-semibold text-nuDark dark:text-white">Dr. Imran</p>
+                  <p class="text-xs uppercase tracking-widest text-slate-400 dark:text-slate-500">Health Partner</p>
+                </div>
+              </article>
+              <article
+                class="story-card min-w-[260px] flex-1 snap-center overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary md:min-w-[320px] dark:border-slate-700 dark:bg-slate-900/70 dark:hover:shadow-slate-900/50"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=80"
+                  alt="Sana presenting handcrafted products at a community market"
+                  class="h-48 w-full object-cover"
+                />
+                <div class="p-6">
+                  <p class="text-sm text-slate-600 dark:text-slate-300">
+                    “With vocational training, I started a small business and now support my family independently.”
+                  </p>
+                  <p class="mt-4 text-sm font-semibold text-nuDark dark:text-white">Sana</p>
+                  <p class="text-xs uppercase tracking-widest text-slate-400 dark:text-slate-500">Program Graduate</p>
+                </div>
+              </article>
+              <article
+                class="story-card min-w-[260px] flex-1 snap-center overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary md:min-w-[320px] dark:border-slate-700 dark:bg-slate-900/70 dark:hover:shadow-slate-900/50"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1524503033411-c9566986fc8f?auto=format&fit=crop&w=600&q=80"
+                  alt="A volunteer teaching young children in a classroom"
+                  class="h-48 w-full object-cover"
+                />
+                <div class="p-6">
+                  <p class="text-sm text-slate-600 dark:text-slate-300">
+                    “Volunteering with Nayee Umang keeps me grounded. Every weekend, we bring literacy to new neighborhoods.”
+                  </p>
+                  <p class="mt-4 text-sm font-semibold text-nuDark dark:text-white">Ruth</p>
+                  <p class="text-xs uppercase tracking-widest text-slate-400 dark:text-slate-500">Volunteer Mentor</p>
+                </div>
+              </article>
+            </div>
+            <button
+              type="button"
+              class="stories-nav stories-next absolute right-0 top-1/2 z-10 hidden -translate-y-1/2 rounded-full border border-slate-200 bg-white p-3 text-slate-600 shadow transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-nuPrimary lg:flex dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:focus-visible:ring-nuSecondary"
+              aria-label="Next story"
+              data-direction="next"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <div class="stories-dots mt-6 flex items-center justify-center gap-2">
+              <button
+                type="button"
+                class="story-dot h-2.5 w-2.5 rounded-full border border-nuPrimary/40 bg-nuPrimary dark:border-nuSecondary/40 dark:bg-nuSecondary"
+                aria-label="View story 1"
+                data-index="0"
+              ></button>
+              <button
+                type="button"
+                class="story-dot h-2.5 w-2.5 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-800"
+                aria-label="View story 2"
+                data-index="1"
+              ></button>
+              <button
+                type="button"
+                class="story-dot h-2.5 w-2.5 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-800"
+                aria-label="View story 3"
+                data-index="2"
+              ></button>
+              <button
+                type="button"
+                class="story-dot h-2.5 w-2.5 rounded-full border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-800"
+                aria-label="View story 4"
+                data-index="3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="support" class="bg-slate-100 py-20 dark:bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-2">
+            <div>
+              <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">Ways to Support</h2>
+              <p class="mt-4 text-slate-600 dark:text-slate-300">
+                Join hands with us to sustain vital programs and bring hope to more
+                communities.
+              </p>
+              <div class="mt-8 space-y-4">
+                <div class="rounded-2xl bg-white p-6 shadow-sm dark:bg-slate-900/70">
+                  <h3 class="text-lg font-semibold text-nuDark dark:text-white">Donate Monthly</h3>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                    Support ongoing education and health initiatives with recurring
+                    contributions.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-white p-6 shadow-sm dark:bg-slate-900/70">
+                  <h3 class="text-lg font-semibold text-nuDark dark:text-white">Volunteer Your Time</h3>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                    Share your expertise as a mentor, health professional, or community
+                    advocate.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-white p-6 shadow-sm dark:bg-slate-900/70">
+                  <h3 class="text-lg font-semibold text-nuDark dark:text-white">Corporate Partnerships</h3>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                    Collaborate on CSR projects aligned with community welfare goals.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-3xl bg-white p-8 shadow dark:bg-slate-900/70">
+              <h3 class="text-xl font-semibold text-nuDark dark:text-white">Stay Connected</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                Share your contact details to receive updates and event invites.
+              </p>
+              <form class="mt-6 space-y-4" id="contact-form">
+                <div>
+                  <label for="name" class="text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Your full name"
+                    class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-nuPrimary focus:ring-2 focus:ring-nuPrimary/20 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="name@example.com"
+                    class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-nuPrimary focus:ring-2 focus:ring-nuPrimary/20 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200"
+                  />
+                </div>
+                <div>
+                  <label for="interest" class="text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400"
+                    >Area of Interest</label
+                  >
+                  <select
+                    id="interest"
+                    name="interest"
+                    class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-nuPrimary focus:ring-2 focus:ring-nuPrimary/20 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200"
+                  >
+                    <option value="education">Education Initiatives</option>
+                    <option value="health">Health Programs</option>
+                    <option value="community">Community Support</option>
+                    <option value="volunteer">Volunteer Opportunities</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message" class="text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="How would you like to contribute?"
+                    class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-nuPrimary focus:ring-2 focus:ring-nuPrimary/20 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full rounded-full bg-nuSecondary px-6 py-3 text-sm font-semibold text-white transition hover:bg-nuSecondary/90 dark:bg-nuPrimary dark:text-slate-950 dark:hover:bg-nuPrimary/90"
+                >
+                  Submit
+                </button>
+                <p
+                  id="form-feedback"
+                  class="hidden rounded-xl border border-nuSecondary/30 bg-nuSecondary/10 px-4 py-3 text-sm text-nuSecondary dark:border-nuSecondary/40 dark:bg-nuSecondary/20 dark:text-nuSecondary/80"
+                >
+                  Thank you for connecting with us! We will reach out soon.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-white py-20 dark:bg-slate-900">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 md:grid-cols-2">
+            <div>
+              <h2 class="text-3xl font-bold text-nuDark md:text-4xl dark:text-white">Contact Us</h2>
+              <p class="mt-4 text-slate-600 dark:text-slate-300">
+                Reach out to learn more, collaborate, or request support for your community.
+              </p>
+              <div class="mt-8 space-y-5 text-sm text-slate-600 dark:text-slate-300">
+                <p class="rounded-2xl border border-slate-200 p-4 dark:border-slate-700 dark:bg-slate-900/70">
+                  <span class="block text-xs uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80"
+                    >Email</span
+                  >
+                  connect@nayeeumang.org
+                </p>
+                <p class="rounded-2xl border border-slate-200 p-4 dark:border-slate-700 dark:bg-slate-900/70">
+                  <span class="block text-xs uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80"
+                    >Phone</span
+                  >
+                  +92 300 000 0000
+                </p>
+                <p class="rounded-2xl border border-slate-200 p-4 dark:border-slate-700 dark:bg-slate-900/70">
+                  <span class="block text-xs uppercase tracking-widest text-nuPrimary dark:text-nuPrimary/80"
+                    >Address</span
+                  >
+                  12 Harmony Street, Karachi, Pakistan
+                </p>
+              </div>
+            </div>
+            <div class="relative overflow-hidden rounded-3xl bg-slate-900 p-8 text-white dark:bg-slate-800">
+              <div
+                class="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_top_left,_rgba(43,108,176,0.35),_transparent_60%)]"
+              ></div>
+              <div class="relative space-y-4">
+                <p class="text-sm uppercase tracking-widest text-nuAccent">
+                  Upcoming Events
+                </p>
+                <div class="space-y-4 text-sm text-slate-200">
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-nuAccent">Dec 2025</p>
+                    <p class="mt-1 font-semibold text-white">
+                      Annual Health & Wellness Camp
+                    </p>
+                    <p class="mt-1 text-slate-300">Karachi Central District</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-nuAccent">Jan 2026</p>
+                    <p class="mt-1 font-semibold text-white">
+                      Digital Literacy Drive for Youth
+                    </p>
+                    <p class="mt-1 text-slate-300">Lahore Innovation Lab</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-nuAccent">Feb 2026</p>
+                    <p class="mt-1 font-semibold text-white">
+                      Women Entrepreneurs Summit
+                    </p>
+                    <p class="mt-1 text-slate-300">Islamabad Community Hub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 py-10 text-slate-300 dark:bg-slate-950">
+      <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-widest text-nuSecondary dark:text-nuSecondary/80">Nayee Umang</p>
+          <p class="mt-2 text-sm text-slate-300 dark:text-slate-400">
+            A registered welfare foundation committed to equitable futures.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 text-sm md:flex-row md:items-center md:gap-6">
+          <a href="#hero" class="transition hover:text-white">Home</a>
+          <a href="#programs" class="transition hover:text-white">Programs</a>
+          <a href="#support" class="transition hover:text-white">Get Involved</a>
+          <a href="#contact" class="transition hover:text-white">Contact</a>
+        </div>
+        <p class="text-xs text-slate-500 dark:text-slate-500/80">
+          © <span id="current-year"></span> Nayee Umang Organization. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button
+      id="back-to-top"
+      type="button"
+      class="fixed bottom-6 right-6 hidden flex h-12 w-12 items-center justify-center rounded-full bg-nuPrimary text-white shadow-lg shadow-nuPrimary/40 transition hover:bg-nuPrimary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white dark:bg-nuSecondary dark:text-slate-950 dark:shadow-nuSecondary/30 dark:hover:bg-nuSecondary/90"
+      aria-label="Scroll back to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
